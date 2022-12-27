@@ -9,8 +9,6 @@ class bass_matrix{
     protected:
         int matrix_1 [2][2];
         int matrix_2 [2][2];
-        // int add [2][2];
-        // int sub [2][2];
     
     public:
 
@@ -22,7 +20,7 @@ class bass_matrix{
 
             for(int i = 0; i<2; i++){
                 for(int j = 0; j<2 ;j++){
-                    cout<<"Enter the element"<<i <<j<<":";
+                    cout<<"Enter the element"<<i <<j<<": ";
                     cin >> matrix_1 [i][j];
                 }
             }
@@ -32,7 +30,7 @@ class bass_matrix{
 
             for(int i = 0; i<2; i++){
                 for(int j = 0; j<2 ;j++){
-                    cout<<"Enter the element"<<i <<j<<":";
+                    cout<<"Enter the element"<<i <<j<<": ";
                     cin >> matrix_2 [i][j];
                 }
             }
@@ -57,8 +55,6 @@ class bass_matrix{
     
     }
 
-    // void substraction();
-    // void print_matrix3();
 
 };
 
