@@ -154,12 +154,13 @@ void matrix_func::print_matrix4(){
 
 int main(){
     char flag;
+
     do{
        
         system("cls");
         
         matrix_func tamp;
-        // sub_matrix tamp2;
+
         tamp.set_matrix();
         tamp.print_matrix();
         cout<<"******************************************************************************************************\n";
@@ -169,6 +170,11 @@ int main(){
         cout<<"'Q' for Quit\n";
         cout<<"*****Enter the function*****\n";
         cin>> flag;
+
+        if(flag == 'q' || flag == 'Q'){
+            system("cls");
+            break;
+        }
 
         if(flag == 'a' || flag == 'A'){
             // add_matrix tamp1;
@@ -188,8 +194,21 @@ int main(){
             tamp.multiplication();
             tamp.print_matrix4();
         }
-        getch();
-    }while(flag !='q' && flag !='Q');
+
+
+        cout<<"'Q' for Quit or press any carector and press enter\n";
+        cin>> flag;
+        if(flag == 'q' || flag == 'Q'){
+            system("cls");
+            break;
+        }
+
+        else{
+            system("cls");
+            continue;
+        }
+
+    }while(1);
     
     return 0;
 }
