@@ -14,36 +14,28 @@ class bass_matrix{
     
     public:
 
+        //Taking the matrix elemant as input
+
         void set_matrix(){
             // first matrix 
             cout<<"*****Enter the first matrix*****\n";
 
-            cout<<"Enter the element 11: ";
-            cin >> matrix_1 [0][0];
-
-            cout<<"Enter the element 12: ";
-            cin >> matrix_1 [0][1];
-
-            cout<<"Enter the element 21: ";
-            cin >> matrix_1 [1][0];
-
-            cout<<"Enter the element 22: ";
-            cin >> matrix_1 [1][1];
+            for(int i = 0; i<2; i++){
+                for(int j = 0; j<2 ;j++){
+                    cout<<"Enter the element"<<i <<j<<":";
+                    cin >> matrix_1 [i][j];
+                }
+            }
 
             //second matrix 
             cout<<"*****Enter the second matrix*****\n";
 
-            cout<<"Enter the element 11: ";
-            cin >> matrix_2 [0][0];
-
-            cout<<"Enter the element 12: ";
-            cin >> matrix_2 [0][1];
-
-            cout<<"Enter the element 21: ";
-            cin >> matrix_2 [1][0];
-
-            cout<<"Enter the element 22: ";
-            cin >> matrix_2 [1][1];
+            for(int i = 0; i<2; i++){
+                for(int j = 0; j<2 ;j++){
+                    cout<<"Enter the element"<<i <<j<<":";
+                    cin >> matrix_2 [i][j];
+                }
+            }
         }
 
     void print_matrix(){
